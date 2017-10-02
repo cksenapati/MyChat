@@ -1,0 +1,70 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_fragment_add_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:layout_margin="8dp"
+    tools:context="com.example.android.mychat.ui.addFriends.addFriendsFragment">
+
+    <TextView
+        android:id="@+id/text_view_pending_requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/tw__composer_black"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text"
+        android:visibility="gone"
+        android:text="Pending Requests"/>
+    <ListView
+        android:id="@+id/list_view_pending_friend_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_pending_requests"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/text_view_sent_requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/tw__composer_black"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text"
+        android:visibility="gone"
+        android:layout_below="@id/list_view_pending_friend_requests"
+        android:text="Sent Requests"/>
+    <ListView
+        android:id="@+id/list_view_sent_friends_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_sent_requests"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/text_view_my_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/tw__composer_black"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text"
+        android:visibility="gone"
+        android:layout_below="@id/list_view_sent_friends_requests"
+        android:text="My Friends"/>
+    <ListView
+        android:id="@+id/list_view_my_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_my_friends"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

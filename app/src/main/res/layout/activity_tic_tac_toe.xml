@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tw__composer_white"
+    tools:context="com.example.android.mychat.ui.games.TicTacToeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/Toolbar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_view_my_pawn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                />
+
+            <TextView
+                android:id="@+id/text_view_my_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_text"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/corner_radius_friend_profile_pic"
+                android:elevation="12dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/tw__composer_white"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9">
+
+                <ImageView
+                    android:id="@+id/image_view_my_profile_pic"
+                    android:layout_width="@dimen/friend_profile_pic"
+                    android:layout_height="@dimen/friend_profile_pic"
+                    android:background="@color/tw__composer_white"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VS"
+                android:textSize="@dimen/big_text"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/corner_radius_friend_profile_pic"
+                android:elevation="12dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/tw__composer_white"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9">
+
+                <ImageView
+                    android:id="@+id/image_view_friend_profile_pic"
+                    android:layout_width="@dimen/friend_profile_pic"
+                    android:layout_height="@dimen/friend_profile_pic"
+                    android:background="@color/tw__composer_white"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_view_friends_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_text"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+
+            <ImageView
+                android:id="@+id/image_view_friends_pawn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_gravity="center"
+
+                />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_view_my_turn"
+            android:text="Your turn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_text"
+            android:textColor="@color/primary"
+            android:layout_gravity="left"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/text_view_friends_turn"
+            android:text="Opponent's turn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_text"
+            android:layout_gravity="right"
+            android:textColor="@color/primary"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_game_board"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/button_00"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+            <ImageButton
+                android:id="@+id/button_01"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+            <ImageButton
+                android:id="@+id/button_02"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/button_10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+            <ImageButton
+                android:id="@+id/button_11"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+            <ImageButton
+                android:id="@+id/button_12"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/button_20"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+            <ImageButton
+                android:id="@+id/button_21"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+            <ImageButton
+                android:id="@+id/button_22"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:onClick="onImageButtonClick"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_view_game_result"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_text"
+            android:textColor="@color/primary"
+            android:visibility="invisible"
+            android:layout_gravity="left"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/text_view_play_again"
+            android:text="Play again  "
+            android:drawableRight="@drawable/rightarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textSize="@dimen/big_text"
+            android:onClick="onPlayAgainClick"
+            android:layout_gravity="right"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+        <TextView
+            android:id="@+id/text_view_play_again"
+            android:text="Play again  "
+            android:drawableRight="@drawable/rightarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_text"
+            android:layout_gravity="right"
+            android:gravity="right"/>
+    </LinearLayout>-->
+</LinearLayout>

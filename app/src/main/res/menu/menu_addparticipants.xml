@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.mychat.MyChatListsActivity"
+   >
+
+
+    <item
+        android:id="@+id/action_search"
+        android:animateLayoutChanges="true"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        android:orderInCategory="100"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+</menu>

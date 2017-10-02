@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">MyChat</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- allChatsFragment related Stings -->
+    <string name="pager_title_all_chats">Chats</string>
+
+    <!-- addFriendsFragment related Stings -->
+    <string name="pager_title_add_friends">Friends</string>
+
+    <!-- searchFriendsFragment related Stings -->
+    <string name="pager_title_search_friends">Search</string>
+
+    //Menu related strings
+    <string name="action_sort">Sort</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_search">Search</string>
+    <string name="action_do_you_know">Do You Know</string>
+    <string name="action_my_profile">My profile</string>
+    <string name="action_new_group">New Group</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_tic_tac_toe_game">Tic Tac Toe</string>
+
+
+    //Main Activity
+    //searchfragment
+    <string name="hint_enter_friends_email_or_name">Enter friend\'s email or name</string>
+    <string name="hint_enter_friends_name">Enter friend\'s name</string>
+    <string name="hint_search">Search...</string>
+    <string name="toast_is_already_your_friend">%s is already your friend!</string>
+    <string name="toast_you_cant_add_yourself">You can\'t add yourself as a friend.</string>
+    <string name="toast_friend_request_sent">Friend request sent successfully.</string>
+    <string name="title_activity_main22">Main22Activity</string>
+    <string name="recommended_user_option_text">Recommended for you</string>
+    <string name="search_by_name_text">Name</string>
+    <string name="search_by_gmail_text">Mail Id</string>
+    <string name="search_by_text">Search by</string>
+
+
+    //addFriendFragment
+    <string name="toast_you_became_friend_of">You became friend of </string>
+
+    //Create and Login Account Activity
+    <string name="title_activity_create_account">Create Account</string>
+    <string name="text_dont_have_account">Don\'t have an account?</string>
+    <string name="text_already_have_account">Already have an account?</string>
+    <string name="button_create_account">Sign Up</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="button_signin_with_google">SIGN IN WITH GOOGLE</string>
+    <string name="button_signin_with_password">SIGN IN</string>
+    <string name="hint_enter_email">Enter your email</string>
+    <string name="hint_enter_username">Enter your name</string>
+    <string name="hint_enter_password">Enter password</string>
+    <string name="image_view_logo_image">Logo Image</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."
+    </string>
+    <string name="progress_dialog_authenticating_with_firebase">Authenticating with Firebase…</string>
+    <string name="title_activity_chat_details">ChatDetails</string>
+
+
+    //ChatDetailsActivity
+    <string name="hint_write_message">Write Message</string>
+    <string name="message_status_not_yet_delivered">Not yet delivered</string>
+    <string name="message_status_delivered">Delivered</string>
+    <string name="message_status_seen">Seen</string>
+
+
+    //Add subject activity
+    <string name="hint_enter_group_name">Enter group name here...</string>
+    <string name="title_activity_filter_questions">Filter</string>
+
+    <!-- Strings related to Settings -->
+
+
+
+
+    <!-- Example Category settings -->
+    <string name="pref_header_category">Category</string>
+    <string-array name="pref_category_list_titles">
+        <item>Any Category</item>
+        <item>General knowledge</item>
+        <item>Books</item>
+        <item>Film</item>
+        <item>Music</item>
+        <item>Musical and Theatres</item>
+        <item>Television</item>
+        <item>Video Games</item>
+        <item>Board Games</item>
+        <item>Science and Nature</item>
+        <item>Computers</item>
+        <item>Mathematics</item>
+        <item>Mythology</item>
+        <item>Sports</item>
+        <item>Geography</item>
+        <item>History</item>
+        <item>Politics</item>
+        <item>Art</item>
+        <item>celebrities</item>
+        <item>Animals</item>
+        <item>Vehicles</item>
+        <item>Comics</item>
+        <item>Gadgets</item>
+        <item>Cartoon and Animation</item>
+    </string-array>
+    <string-array name="pref_category_list_values">
+        <item>0</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>32</item>
+    </string-array>
+    <string name="pref_title_set_question_category">Set Category</string>
+
+
+    <!-- Example Dificulty settings -->
+    <string name="pref_header_difficulty">Difficulty Level</string>
+    <string-array name="pref_difficulty_titles">
+        <item>Any</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+    <string-array name="pref_difficulty_values">
+        <item>0</item>
+        <item>easy</item>
+        <item>medium</item>
+        <item>hard</item>
+    </string-array>
+    <string name="pref_title_set_difficulty_level">Set Difficulty Level</string>
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+</resources>

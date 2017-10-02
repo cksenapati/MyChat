@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.mychat.ui.passTime.DoYouKnowActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/Toolbar" >
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_view_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:textSize="@dimen/big_text"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <RadioGroup
+                android:id="@+id/radio_group_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio_button_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_text"
+                    android:padding="10dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_text"
+                    android:padding="10dp"
+                    android:checked="false" />
+                <RadioButton
+                    android:id="@+id/radio_button_option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_text"
+                    android:padding="10dp"
+                    android:checked="false" />
+                <RadioButton
+                    android:id="@+id/radio_button_option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/big_text"
+                    android:padding="10dp"
+
+                    android:checked="false" />
+            </RadioGroup>
+        </LinearLayout>
+
+      <Button
+          android:id="@+id/button_lock_my_ans"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Lock My Ans"
+          android:background="@color/primary"
+          android:layout_margin="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_fetching_data"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

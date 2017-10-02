@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.mychat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyChatApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/mychatlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.login.LoginActivity">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.mychat.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.chatDetails.ChatDetailsActivity"
+            android:parentActivityName=".ui.MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.myProfile.MyProfileActivity"
+            android:parentActivityName=".ui.MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.myProfile.UpdateProfilePicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.newGroup.UpdateGroupProfilePicActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.ViewMediaFile.ViewImageActivity" />
+        <activity android:name=".ui.userDetails.userDetailsActivity" />
+        <activity android:name=".ui.newGroup.AddParticipantsActivity" />
+        <activity android:name=".ui.chatDetails.ForwardMessageActivity" />
+        <activity android:name=".ui.newGroup.AddSubjectActivity" />
+        <activity android:name=".ui.games.TicTacToeActivity" />
+
+        <service
+            android:name=".services.GetNotification"
+            android:exported="false"
+            android:launchMode="singleTop" />
+
+        <activity android:name=".ui.chatDetails.MessageDetailsActivity" />
+        <activity android:name=".ui.myProfile.ChooseOneFromOldPicsActivity" />
+        <activity android:name=".ui.chatDetails.SelectedMediafileActivity" />
+        <activity
+            android:name=".ui.passTime.DoYouKnowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.passTime.FilterQuestionsActivity"
+            android:label="@string/title_activity_filter_questions"
+            android:parentActivityName=".ui.passTime.DoYouKnowActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.mychat.ui.passTime.DoYouKnowActivity" />
+        </activity>
+        <meta-data
+            tools:replace="android:value"
+            android:name="io.fabric.ApiKey"
+            android:value="15d07cf2faf95874471f8979805171948def0ccf" />
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.mychat.MyChatListsActivity">
+
+    <item
+        android:title="filter"
+        android:id="@+id/action_filter_questions"
+        android:animateLayoutChanges="true"
+        android:icon="@drawable/ic_filter"
+        android:orderInCategory="100"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_fragment_search_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.mychat.ui.searchFriends.searchFriendsFragment">
+
+    <TextView
+        android:id="@+id/text_view_search_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:text="@string/search_by_text"/>
+    <LinearLayout
+        android:id="@+id/linear_layout_search_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_search_by"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_search_by_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/search_by_name_text"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+        <Button
+            android:id="@+id/button_search_by_mail_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/search_by_gmail_text"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_search_friend_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/linear_layout_search_by"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <EditText
+            android:id="@+id/edit_text_search_friend_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_friends_email_or_name"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey"
+            android:visibility="visible"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <ListView
+        android:id="@+id/list_view_friends_autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til_search_friend_email"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

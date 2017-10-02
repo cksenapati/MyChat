@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_layout_single_message"
+    android:layout_marginLeft="@dimen/single_message_margin_medium"
+    android:layout_marginRight="@dimen/single_message_margin_extra_small"
+    android:layout_marginBottom="@dimen/single_message_margin_medium"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/single_message_margin_medium"
+    android:paddingBottom="@dimen/single_message_margin_extra_small"
+    android:paddingRight="@dimen/single_message_margin_medium"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_layout_message_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="@dimen/single_message_margin_medium"
+        android:paddingBottom="@dimen/single_message_margin_extra_small"
+        android:paddingRight="@dimen/single_message_margin_medium"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_view_sender_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/message_small_text"
+            />
+
+        <ImageView
+            android:id="@+id/image_view_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true" />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_video"
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+
+            <VideoView
+                android:id="@+id/video_view_uploaded_video"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+           <ImageButton
+                android:id="@+id/image_button_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_play"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/image_view_uploaded_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_audio_play"
+            android:adjustViewBounds="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+            <TextView
+                android:id="@+id/text_view_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/message_medium_text"
+                />
+            <TextView
+                android:id="@+id/text_view_message_sent_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/message_small_text"
+                />
+            <TextView
+                android:id="@+id/text_view_message_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                android:textSize="@dimen/message_small_text"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

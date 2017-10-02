@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.mychat.MyChatListsActivity">
+
+    <item
+        android:id="@+id/action_play_tictactoe"
+        android:orderInCategory="100"
+        android:title="@string/action_tic_tac_toe_game"
+        android:visible="true"
+        app:showAsAction="never" />
+
+
+</menu>
